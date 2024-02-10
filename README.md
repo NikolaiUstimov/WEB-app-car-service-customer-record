@@ -1,4 +1,4 @@
-![](../Service_station_project-customer_records/img/mech-serv.svg)
+![](https://github.com/NikolaiUstimov/WEB-app-car-service-customer-record/blob/master/img/mech-serv.svg)
 ***
 ## Создаю web-приложение для учёта клиентов в автосервисе
 ### Что хочу реализовать:
