@@ -39,11 +39,29 @@ let listArray = [
 	},
 ];
 
-function getElementTr(index, list) {
+function getElementTr(list) {
 	let elementTr = document.createElement("tr");
-	elementTr.classList.add("tr_items");
-	let elementTd = document.createElement("td");
-	elementTd.classList.add("td_items");
+	elementTr.classList.add("tr_item");
+	let elementTdOne = document.createElement("td");
+	elementTdOne.classList.add("td_item");
+	let elementTdTwo = document.createElement("td");
+	elementTdTwo.classList.add("td_item");
+	let elementTdThree = document.createElement("td");
+	elementTdThree.classList.add("td_item");
+	let elementTdFour = document.createElement("td");
+	elementTdFour.classList.add("td_item");
+	let elementTdFive = document.createElement("td");
+	elementTdFive.classList.add("td_item");
+	let elementTdSix = document.createElement("td");
+	elementTdSix.classList.add("td_item");
 
+	elementTdOne.textContent = list.date;
+	elementTdTwo.textContent = list.customer;
+	elementTdThree.textContent = list.carBrand;
+	elementTdFour.textContent = list.typesOfWork;
+	elementTdFive.textContent = list.parts;
+	elementTdSix.textContent = list.price;
+
+	elementTr.append(elementTdOne, elementTdTwo, elementTdThree, elementTdFour, elementTdFive, elementTdSix)
 	return elementTr;
 }
